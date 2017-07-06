@@ -1,0 +1,373 @@
+.rsbr_sel ::-moz-selection{ background:#FFFB86; color:#000; }
+.rsbr_sel ::selection{ background:#FFFB86; color:#000; }
+
+#rsbr_win {
+ -moz-user-select: none !important;
+ -webkit-user-select: none !important;
+ user-select: none !important;
+ cursor: default !important;
+ z-index: 100000 !important;
+}
+div#rsbr_win { 
+ position: fixed !important;
+ font-size: 0 !important; /* лекарство от незапланированных отступов в inline-block */
+ line-height: 0 !important;
+ letter-spacing: -1px !important;
+ background-color: #808498 !important;
+ padding: 8px 15px 15px 15px !important;
+ color: white !important;
+}
+div#rsbr_titlebar { 
+ position: relative !important;
+ height: 20px !important;
+ margin: 0 0 8px 0 !important;
+ text-align: left !important;
+ cursor: move !important;
+ line-height: normal !important;
+ letter-spacing: normal !important;
+}
+span.rsbr_progname { 
+ font-family: Arial, Helvetica, sans-serif !important;
+ font-size: 19px !important;
+ font-weight: bold !important;
+}
+div#rsbr_closebar { 
+ float: right !important;
+ background: url("close.gif") 50% no-repeat;	
+ height: 20px !important;
+ width: 20px !important;
+ cursor: pointer !important;
+}
+div#rsbr_closebar:hover {
+ background: url("close_over.gif") 50% no-repeat;	
+}
+div#rsbr_closebar:active {
+ background: url("close.gif") 50% no-repeat;	
+}
+div#rsbr_panel { 
+ font-size: 0 !important;
+ position: relative !important;
+ padding: 9px !important;
+ background-color: white !important;
+}
+div.rsbr_toolbar {
+ background-color: transparent !important;
+ margin: 0 !important;
+ padding: 0 !important;
+ font-size: 0 !important;
+ line-height:0 !important;
+ letter-spacing:-1px !important;
+ text-align: left !important;
+}
+div#rsbr_slider {
+ position: relative !important;
+ background: transparent url("line_slider.gif") 50% no-repeat;
+ margin-bottom: 5px !important;
+ display: inline-block !important;
+ width: 210px !important;
+ font-size: 0 !important;
+ margin: 0 !important;
+ padding: 0 !important;
+}
+div.rsbr_handle {
+ position: relative !important;
+ height: 30px !important;
+ width: 30px !important;
+ display: inline-block !important;
+ cursor: pointer !important;
+ font-size: 0 !important;
+ margin: 0 !important;
+ padding: 0 !important;
+}
+div.rsbr_handle_light {
+ background: url("handle_light.gif") 50%;
+}
+div#rsbr_handle_light:hover {
+ background: url("handle_light_over.gif") 50%;	
+}
+div.rsbr_handle_dark {
+ background: url("handle_dark.gif") 50%;
+}
+div#rsbr_handle_dark:hover {
+ background: url("handle_dark_over.gif") 50%;	
+}
+div#rsbr_speed {
+ position: relative !important;
+ background-color: transparent !important;
+ color: black !important;
+ font-family: Arial, Helvetica, sans-serif !important;
+ font-size: 11px !important;
+ line-height: 1 !important;
+ letter-spacing: normal !important;
+ width: 40px !important;
+ display: inline-block !important;
+ vertical-align: top !important;
+}
+span.rsbr_number { 
+ font-family: Arial, Helvetica, sans-serif !important;
+ font-size: 13px !important;
+}
+div.rsbr_button {
+ border: 2px solid transparent !important;
+ position: relative !important;
+ height: 32px !important;
+ width: 32px !important;
+ margin: 0 3px 0 0 !important;
+ cursor: pointer !important;
+ display: inline-block !important;
+ font-size: 0 !important;
+}
+div.rsbr_button_off {
+ position: absolute !important;
+ background-color: white !important;
+ border: 2px solid transparent !important;
+ height: 32px !important;
+ width: 32px !important;
+ z-index: 300 !important;
+ visibility: hidden;
+ opacity: 0.5 !important;
+}
+div#rsbr_screen {
+ position: absolute !important;
+ z-index: 300 !important;
+ visibility: hidden;
+}
+div.rsbr_button#rsbr_play {
+ background: #B7FF8B url("play.gif") 50%;
+}
+div.rsbr_button#rsbr_play:hover { 
+ background: url("play_over.gif") 50%;
+ border-color: #B7FF8B !important;
+}
+div.rsbr_button#rsbr_play:active { 
+ background: url("play.gif") 50%;
+ border-color: transparent !important;
+}
+div.rsbr_button#rsbr_stop {
+ background: #8BDDFF url("stop.gif") 50%;
+}
+div.rsbr_button#rsbr_stop:hover { 
+ background: url("stop_over.gif") 50%;
+ border-color: #8BDDFF !important;
+}
+div.rsbr_button#rsbr_stop:active { 
+ background: url("stop.gif") 50%;
+ border-color: transparent !important;
+}
+div.rsbr_button#rsbr_bigger {
+ background: #FFE28B url("bigger.gif") 50%;
+}
+div.rsbr_button#rsbr_bigger:hover { 
+ background: url("bigger_over.gif") 50%;
+ border-color: #FFE28B !important;
+}
+div.rsbr_button#rsbr_bigger:active { 
+ background: url("bigger.gif") 50%;
+ border-color: transparent !important;
+}
+div.rsbr_button#rsbr_smaller {
+ background: #FF99FB url("smaller.gif") 50%;
+}
+div.rsbr_button#rsbr_smaller:hover { 
+ background: url("smaller_over.gif") 50%;
+ border-color: #FF99FB !important;
+}
+div.rsbr_button#rsbr_smaller:active { 
+ background: url("smaller.gif") 50%;
+ border-color: transparent !important;
+}
+div.rsbr_button#rsbr_donation {
+ background: #B7FF8B url("donation.gif") 50%;
+}
+div.rsbr_button#rsbr_donation:hover { 
+ background: url("donation_over.gif") 50%;
+ border-color: #B7FF8B !important;
+}
+div.rsbr_button#rsbr_donation:active { 
+ background: url("donation.gif") 50%;
+ border-color: transparent !important;
+}
+div.rsbr_button#rsbr_help {
+ background: #FF99FB url("help.gif") 50%;
+}
+div.rsbr_button#rsbr_help:hover { 
+ background: url("help_over.gif") 50%;
+ border-color: #FF99FB !important;
+}
+div.rsbr_button#rsbr_help:active { 
+ background: url("help.gif") 50%;
+ border-color: transparent !important;
+}
+div.rsbr_button#rsbr_light { 
+ background: url("light.gif") no-repeat 50%;
+}
+div.rsbr_button#rsbr_light:hover { 
+ background: url("light_over.gif")  no-repeat 50%;
+ border-color: #ffe28b !important;
+}
+div.rsbr_button#rsbr_light:active { 
+ background: url("light.gif")  no-repeat 50%;
+ border-color: transparent !important;
+}
+div.rsbr_button#rsbr_dynamic { 
+ background: #8BDDFF url("dynamic.gif") 50%;
+}
+div.rsbr_button#rsbr_dynamic:hover { 
+ background: url("dynamic_over.gif") 50%;
+ border-color: #8BDDFF !important;
+}
+div.rsbr_button#rsbr_dynamic:active { 
+ background: url("dynamic.gif") 50%;
+ border-color: transparent !important;
+}
+div.rsbr_button#rsbr_static { 
+ background: #8BDDFF url("static.gif") 50%;
+}
+div.rsbr_button#rsbr_static:hover { 
+ background: url("static_over.gif") 50%;
+ border-color: #8BDDFF !important;
+}
+div.rsbr_button#rsbr_static:active { 
+ background: url("static.gif") 50%;
+ border-color: transparent !important;
+}
+div.rsbr_button#rsbr_centre {
+ background: #B7FF8B url("centre.gif") 50%;
+}
+div.rsbr_button#rsbr_centre:hover { 
+ background: url("centre_over.gif") 50%;
+ border-color: #B7FF8B !important;
+}
+div.rsbr_button#rsbr_centre:active { 
+ background: url("centre.gif") 50%;
+ border-color: transparent !important;
+}
+div.rsbr_button#rsbr_left {
+ background: #B7FF8B url("left.gif") 50%;
+}
+div.rsbr_button#rsbr_left:hover { 
+ background: url("left_over.gif") 50%;
+ border-color: #B7FF8B !important;
+}
+div.rsbr_button#rsbr_left:active { 
+ background: url("left.gif") 50%;
+ border-color: transparent !important;
+}
+div#rsbr_trackbar {
+ position: relative !important;
+ overflow: hidden;
+}
+div#rsbr_track {
+ position: relative !important;
+ margin: 0 auto !important;
+}
+div#rsbr_field {
+ float: left !important; 
+ width: 100% !important; 
+ background-color: #8BDDFF !important;
+ text-align: center !important;
+ margin: 0 auto !important; 
+}
+span.rsbr_widthfield { 
+ font-family: Arial, Helvetica, sans-serif !important;
+ font-size: 11px !important;
+ color: black !important;
+ line-height: 1 !important;
+ letter-spacing: normal !important;
+}
+div.rsbr_edge {
+ position: absolute !important;
+ background-color: #FFE28B !important;
+ height: 13px !important;
+ width: 8px !important;
+ cursor:e-resize !important;
+}
+div#rsbr_textfield { 
+ position: relative !important;
+ height: 250px;
+ width: 330px;
+ background-color: white !important;
+ color: black !important;
+ text-align: left !important;
+ font-family: 'Times New Roman', Times, serif !important;
+ font-weight:normal !important;
+ font-stretch: normal !important;
+ font-variant: normal !important;
+ font-style: normal !important;
+ white-space: nowrap !important;
+ line-height: 1 !important;
+ letter-spacing: normal !important;
+ word-spacing: normal !important;
+ border-width: 0 !important;
+ padding: 0 !important;
+ overflow: scroll !important;
+ z-index: 10 !important;
+}
+div.rsbr_scrollmask {
+ background:transparent !important; 
+ position:absolute !important; 
+ opacity: 0.5 !important; 
+ pointer-events: none !important; 
+ z-index: 20 !important;
+}
+span#rsbr_textshell {
+ position: relative !important;
+ display: inline-block !important;
+ background-color: transparent !important;
+}
+div#rsbr_redline {
+ width:2px !important;
+ position:absolute !important;
+ cursor:e-resize !important;
+ background-color: red !important;
+ opacity: 0.2 !important;
+ z-index: 20 !important;
+}
+span.rsbr_textformat {
+ white-space: nowrap !important;
+ font-family: 'Times New Roman', Times, serif !important;
+ font-weight: normal !important;
+ font-stretch: normal !important;
+ font-variant: normal !important;
+ font-style: normal !important;
+ line-height: 1 !important;
+ letter-spacing: normal !important;
+ word-spacing: normal !important;
+ border-width: 0 !important;
+ padding: 0  !important;
+}
+#rsbr_textfield b.rsbr_light_b {
+ color:black !important; font-weight:normal !important;	
+}
+#rsbr_textfield b.rsbr_light_s {
+ color:silver !important; font-weight:normal !important;	
+}
+#rsbr_textfield b.rsbr_dark_b {
+ color:white !important; font-weight:normal !important;	
+}
+#rsbr_textfield b.rsbr_dark_s {
+ color:#969696 !important; font-weight:normal !important;	
+}
+div#rsbr_coner {
+ position: absolute !important;
+ background: url("coner.png") 50% no-repeat;
+ height: 16px !important;
+ width: 16px !important;
+ cursor: se-resize !important;
+ z-index: 30 !important;
+}
+div.rsbr_progresscircle{
+ position: absolute !important;
+ height: 50px !important;
+ width: 50px !important;
+ cursor: default !important;
+ opacity: 0.6 !important;
+ visibility: hidden;
+ z-index: 300 !important;
+}
+div#rsbr_progresscircle_light {
+ background: url("progresscircle_light.gif") 50% no-repeat;
+}
+div#rsbr_progresscircle_dark {
+ background: url("progresscircle_dark.gif") 50% no-repeat;
+}

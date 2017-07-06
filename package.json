@@ -1,0 +1,10 @@
+{
+  "name": "best_reader_lite", 
+  "license": "GNU GPL 3.0", 
+  "author": "Boris Buimov", 
+  "version": "3.1", 
+  "fullName": "Best Reader Lite", 
+  "icon": "data/best_reader_lite-48.png",
+  "id": "jid1-3IHhGmpmTC3klA", 
+  "description": "The best speed-reading and RSVP tool!"
+}
